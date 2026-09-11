@@ -3,6 +3,7 @@ import Login from './pages/Login';
 import Home from './pages/Home';
 import Books from './pages/Books';
 import Borrowers from './pages/Borrowers';
+import Transactions from './pages/Transactions';
 import ProtectedRoute from './components/ProtectedRoute';
 import Layout from './components/Layout';
 import './App.css';
@@ -37,6 +38,16 @@ function App() {
           <ProtectedRoute>
             <Layout>
               <Borrowers />
+            </Layout>
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/transactions"
+        element={
+          <ProtectedRoute>
+            <Layout>
+              <Transactions />
             </Layout>
           </ProtectedRoute>
         }

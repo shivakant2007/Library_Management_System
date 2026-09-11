@@ -28,6 +28,9 @@ const Navbar = () => {
         <Link to="/borrowers" className={`navbar-link ${isActive('/borrowers') ? 'active' : ''}`}>
           Borrowers
         </Link>
+        <Link to="/transactions" className={`navbar-link ${isActive('/transactions') ? 'active' : ''}`}>
+          Transactions
+        </Link>
       </div>
       <div className="navbar-user">
         {user && (
