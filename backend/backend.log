@@ -1,0 +1,4 @@
+◇ injected env (7) from .env // tip: ⌘ enable debugging { debug: true }
+Server is running on port 5000
+MongoDB Connected: 127.0.0.1 / library_management_system
+Initial admin created: ADMIN001 (initial.admin@library.local)
