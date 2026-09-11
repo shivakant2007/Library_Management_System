@@ -1,6 +1,6 @@
 :root {
-  --primary: #1a56db;
-  --primary-hover: #1444b0;
+  --primary: #f97316;
+  --primary-hover: #ea580c;
   --bg: #f8fafc;
   --surface: #ffffff;
   --text: #334155;
@@ -20,6 +20,20 @@
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+}
+
+:root[data-theme='dark'] {
+  --primary: #f97316;
+  --primary-hover: #ea580c;
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --text: #cbd5e1;
+  --text-heading: #f8fafc;
+  --border: #334155;
+  --error: #ef4444;
+  --error-bg: rgba(239, 68, 68, 0.1);
+  --success: #22c55e;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 * {

@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Books from './pages/Books';
 import Borrowers from './pages/Borrowers';
 import Transactions from './pages/Transactions';
+import Fines from './pages/Fines';
 import ProtectedRoute from './components/ProtectedRoute';
 import Layout from './components/Layout';
 import './App.css';
@@ -48,6 +49,16 @@ function App() {
           <ProtectedRoute>
             <Layout>
               <Transactions />
+            </Layout>
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/fines"
+        element={
+          <ProtectedRoute>
+            <Layout>
+              <Fines />
             </Layout>
           </ProtectedRoute>
         }
